@@ -46,8 +46,13 @@
     <title>YuanQiTV OP</title>
 </head>
 <body>
+<div class="container">
+    <input type="text" id="ipAddr" placeholder="ip address here"/>
+    <input type="button" value="go" onclick="app.onGo()"/>
+</div>
 </body>
 <script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
     app.initialize();

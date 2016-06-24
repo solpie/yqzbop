@@ -33,19 +33,16 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
-        var ref = cordova.InAppBrowser.open('http://baidu.com', '_blank', 'location=no,fullscreen=yes');
         // app.receivedEvent('deviceready');
+        // $("#ipAddr").click(function () { alert("message"); });
         console.log("onDeviceReady !!!!");
     },
-    // Update DOM on a Received Event
-    receivedEvent: function (id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+    onGo: function () {
+        var ip = document.getElementById('ipAddr').value;
+        app.openOP(ip);
+        console.log("onGo"+ip);
+    },
+    openOP: function (ip) {
+        var ref = cordova.InAppBrowser.open('http://' + ip, '_blank', 'location=no,fullscreen=yes');
     }
 };
