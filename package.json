@@ -1,0 +1,35 @@
+{
+  "name": "yqzbop",
+  "version": "1.0.0",
+  "description": "mobile op for YuanQiTV",
+  "main": "index.js",
+  "scripts": {
+    "view": "webpack --watch --progress --profile --colors --disZplay-error-details --display-cached --config webpack.config.view.js",
+    "view-build": "webpack --progress --profile --colors --disZplay-error-details --display-cached --config webpack.config.view.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solpie/yqzbop.git"
+  },
+  "author": "lawou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solpie/yqzbop/issues"
+  },
+  "homepage": "https://github.com/solpie/yqzbop#readme",
+  "dependencies": {
+    "vue": "^1.0.26",
+    "vue-class-component": "^3.2.0",
+    "vue-resource": "^0.9.1",
+    "vue-router": "^0.7.13"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^3.0.1",
+    "html-loader": "^0.4.3",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.1"
+  }
+}
