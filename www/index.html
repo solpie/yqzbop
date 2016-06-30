@@ -47,18 +47,18 @@
 
 </head>
 <body>
-<div class="container">
-    <input type="text" id="ipAddr" placeholder="ip address here"/>
-    <input type="button" value="go" onclick="app.onGo()"/>
-</div>
+<!--<div class="container">-->
+    <!--<input type="text" id="ipAddr" placeholder="ip address here"/>-->
+    <!--<input type="button" value="go" onclick="app.onGo()"/>-->
+<!--</div>-->
 
 
 <main id="app">
     <router-view></router-view>
     <!--<footerbar :active="active"></footerbar>-->
-    <div class="navbar-fixed bottom" style="position: absolute;bottom: 0;height: 128px">
+    <div class="navbar-fixed bottom" style="position: absolute;bottom: 0;height: 64px">
         <nav>
-            <div class="nav-wrapper indigo" style="height: 128px">
+            <div class="nav-wrapper indigo" style="height: 64px">
                 <div class="row">
                     <ul class="col s6" style="display: block">
                         <li :class="{active: active === 'stage'}">
