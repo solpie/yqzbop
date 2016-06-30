@@ -47,12 +47,6 @@
 
 </head>
 <body>
-<!--<div class="container">-->
-    <!--<input type="text" id="ipAddr" placeholder="ip address here"/>-->
-    <!--<input type="button" value="go" onclick="app.onGo()"/>-->
-<!--</div>-->
-
-
 <main id="app">
     <router-view></router-view>
     <!--<footerbar :active="active"></footerbar>-->
@@ -60,18 +54,22 @@
         <nav>
             <div class="nav-wrapper indigo" style="height: 64px">
                 <div class="row">
-                    <ul class="col s6" style="display: block">
+                    <ul class="col s4" style="display: block">
                         <li :class="{active: active === 'stage'}">
                             <a v-link="{name: 'stage'}">stage</a>
                         </li>
                     </ul>
-                    <ul class="col s6" style="display: block">
+                    <ul class="col s4" style="display: block">
                         <li :class="{active: active === 'home'}">
                             <a v-link="{name: 'home'}">home</a>
                         </li>
                     </ul>
+                    <ul class="col s4" style="display: block">
+                        <li :class="{active: active === 'setting'}">
+                            <a v-link="{name: 'setting'}">setting</a>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
         </nav>
     </div>
