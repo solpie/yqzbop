@@ -101,7 +101,7 @@ export class StagePanelViewMobile extends StagePanelView {
         }
         // playerIdArr = [10002, 10003, 10004, 10005,
         //     10008, 10010, 10011, 10012];
-        this.opReq(`${CommandId.cs_updatePlayerAll}`,
+        this.opReq(`${CommandId.cs_startingLine}`,
             {playerIdArr: playerIdArr, backNumArr: backNumArr}
         );
     }
