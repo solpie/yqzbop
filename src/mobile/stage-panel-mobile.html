@@ -7,6 +7,14 @@
         /*opacity: .8;*/
         /*zoom: 2;*/
     }
+
+    .blueTeam {
+        background-color: #0D47A1;
+    }
+
+    .redTeam {
+        background-color: #990000;
+    }
 </style>
 <div id="stage-panel">
     <div class="row">
@@ -28,15 +36,38 @@
         <a class="waves-effect waves-light btn" @click="onResetTimer" style="height: 35px">Reset</a>
     </div>
     <div class="row">
-        <a class="waves-effect waves-light btn" @click="onAddLeftScore">蓝分++</a>
-        <a class="waves-effect waves-light btn" @click="onMinLeftScore">蓝分--</a>
-        <a class="waves-effect waves-light btn" @click="onAddLeftFoul">Foul++</a>
-        <a class="waves-effect waves-light btn" @click="onMinLeftFoul">Foul--</a>
-        <br>
-        <a class="waves-effect waves-light btn" @click="onMinRightScore">红分--</a>
-        <a class="waves-effect waves-light btn" @click="onAddRightScore">红分++</a>
-        <a class="waves-effect waves-light btn" @click="onMinRightFoul">Foul--</a>
-        <a class="waves-effect waves-light btn" @click="onAddRightFoul">Foul++</a>
+        <div class="col s6">
+            <a class="waves-effect waves-light btn blueTeam" @click="onAddLeftScore">蓝分++</a>
+        </div>
+        <div class="col s6">
+            <a class="waves-effect waves-light btn blueTeam" @click="onMinLeftScore">蓝分--</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <a class="waves-effect waves-light btn blueTeam" @click="onAddLeftFoul">犯规++</a>
+        </div>
+        <div class="col s6">
+            <a class="waves-effect waves-light btn blueTeam" @click="onMinLeftFoul">犯规--</a>
+        </div>
+    </div>
+    <p>
+
+    <div class="row">
+        <div class="col s6">
+            <a class="waves-effect waves-light btn redTeam" @click="onAddRightScore">红分++</a>
+        </div>
+        <div class="col s6">
+            <a class="waves-effect waves-light btn redTeam" @click="onMinRightScore">红分--</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <a class="waves-effect waves-light btn redTeam" @click="onAddRightFoul">犯规++</a>
+        </div>
+        <div class="col s6">
+            <a class="waves-effect waves-light btn redTeam" @click="onMinRightFoul">犯规--</a>
+        </div>
     </div>
     <div class="row">
         <a class="waves-effect waves-light btn" @click="onShowWin">Show Win</a>
