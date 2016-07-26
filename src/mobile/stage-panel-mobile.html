@@ -14,8 +14,6 @@
         ````````````````````````````````````````
         <a class="waves-effect waves-light btn"
            @click="onStarting">starting line</a>
-        <a class="waves-effect waves-light btn"
-           @click="onUpdateBackNum">back num</a>
         ````````````````````````````````````````
     </div>
     <div class="row" style="display: inline-flex">
@@ -30,14 +28,13 @@
         <a class="waves-effect waves-light btn" @click="onResetTimer" style="height: 35px">Reset</a>
     </div>
     <div class="row">
-        <a class="waves-effect waves-light btn" @click="onAddLeftScore">Left++</a>
-        <a class="waves-effect waves-light btn" @click="onMinLeftScore">Left--</a>
+        <a class="waves-effect waves-light btn" @click="onAddLeftScore">蓝分++</a>
+        <a class="waves-effect waves-light btn" @click="onMinLeftScore">蓝分--</a>
         <a class="waves-effect waves-light btn" @click="onAddLeftFoul">Foul++</a>
         <a class="waves-effect waves-light btn" @click="onMinLeftFoul">Foul--</a>
-        <input type="checkbox" id="test5"/>
-        <label for="test5">///////不限制分数\\\\\\\</label>
-        <a class="waves-effect waves-light btn" @click="onMinRightScore">Right--</a>
-        <a class="waves-effect waves-light btn" @click="onAddRightScore">Right++</a>
+        <br>
+        <a class="waves-effect waves-light btn" @click="onMinRightScore">红分--</a>
+        <a class="waves-effect waves-light btn" @click="onAddRightScore">红分++</a>
         <a class="waves-effect waves-light btn" @click="onMinRightFoul">Foul--</a>
         <a class="waves-effect waves-light btn" @click="onAddRightFoul">Foul++</a>
     </div>
@@ -46,9 +43,5 @@
         <a class="waves-effect waves-light btn" @click="onHideWin">Hide Win</a>
         <a class="waves-effect waves-light btn" @click="onSubmitGame">Submit Game</a>
         <a class="waves-effect waves-light btn" @click="onRefresh">Refresh</a>
-    </div>
-
-    <div class="row">
-        <a class="waves-effect waves-light btn" @click="onComingActivity">Coming Act</a>
     </div>
 </div>
