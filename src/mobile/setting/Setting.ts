@@ -1,5 +1,5 @@
 import {VueEx, Component} from "../../../../YuanTV3/src/view/VueEx";
-import {EventId, appModel} from "../../model/Const";
+import {appModel} from "../../model/Const";
 @Component({
     template: require('./setting.html'),
     props: {
@@ -14,7 +14,13 @@ import {EventId, appModel} from "../../model/Const";
     }
 })
 export class Setting extends VueEx {
-    // serverIP:string;
+    serverIP:string;
+
+    ready() {
+        if (appModel.ip) {
+            this.serverIP = appModel.ip;
+        }
+    }
 
     onServerIP(v) {
         console.log(`onServerIP${v}`);
